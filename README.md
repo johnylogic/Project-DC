@@ -1,2 +1,2 @@
-# assignment_1
+Community Discussion Platform for stakeholders in the Legal sector.
  
