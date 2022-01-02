@@ -21,11 +21,21 @@
 
 <style>
 
+   /* for entire createing post section */
+  #createpost {
+      height: 500px;
+      border-radius: 25px;
+      background-color: #f2f2f2;
+      padding: 40px;
+      box-shadow: 2px 2px 1px rgb(208, 204, 221);
+    }
+
 /*for the post content type box only */
-textarea {
+  textarea {
       width: 100%;
-      padding: 12px 20px;
-      margin: 8px 9;
+      height: 250px;
+      padding: 20px 20px;
+      margin: 0px 0;
       display: inline-block;
       border: 1px solid #ccc;
       border-radius: 10px;
@@ -36,20 +46,13 @@ textarea {
  [type=text], select {
       width: 100%;
       padding: 12px 20px;
-      margin: 8px 0;
+      margin: 12px 0;
       display: inline-block;
       border: 1px solid #ccc;
       border-radius: 10px;
       box-sizing: border-box;
     }
-
-    /* for entire createing post section */
-    #createpost {
-      border-radius: 25px;
-      background-color: #f2f2f2;
-      padding: 20px;
-      box-shadow: 2px 2px 1px rgb(208, 204, 221);
-    }
+    
 </style>
 
 <body>
@@ -95,23 +98,27 @@ textarea {
     <br><br>
 
     <div id="createpost" style="margin-left: 80px; margin-right: 80px;">
-    <form action="blog.html">
-        <label for="fname"><p margin-top:"10px">What do you want to talk about?</p></label>
-        <textarea  id="content" name="content" aria-setsize="50%" placeholder="Type here..."></textarea>
+    
+    <form action="service.html">
+        <label for="fname">
+          <p>What do you want to talk about?</p>
+        </label>
+        <textarea id="content" name="content" placeholder="Type here..."></textarea>
 
-        <label for="hashtags">Add #Hashtag</label>
-        <select id="hashtags" name="hashtags">
-        <option value="crimes">#Crimes</option>
-        <option value="civil">#Civil</option>
-        <option value="family">#Family</option>
+        <label for="categories">Add Category</label>
+        <select id="categories" name="categories">
+        <option value="crimes">Crimes</option>
+        <option value="civil">Civil</option>
+        <option value="family">Family</option>
         </select>
 
         <p align="center">
         <input class= "btn btn-primary ml-lg-2" type="submit" value="Post" style="text-align: justify">
         </p>
     </form>
-    </div>
 
+
+    </div>
 
 <!-- 
   <div class="page-section">
@@ -134,7 +141,6 @@ textarea {
     </div>
   </div>
  -->
-
 
   <footer class="page-footer bg-image" style="background-image: url(../assets/img/world_pattern.svg);">
     <div class="container">
@@ -170,7 +176,7 @@ textarea {
           <a href="#" class="footer-link">contact@discube.com</a>
         </div>
 
-        <!--
+      <!--
         <div class="col-lg-3 py-3">
           <h5>Newsletter</h5>
           <p>Get updates, news or events on your mail.</p>
