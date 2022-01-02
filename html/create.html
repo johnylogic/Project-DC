@@ -21,6 +21,7 @@
 
 <style>
 
+/*for the post content type box only */
 textarea {
       width: 100%;
       padding: 12px 20px;
@@ -31,6 +32,7 @@ textarea {
       box-sizing: border-box;
     }
 
+  /*for dropbox*/
  [type=text], select {
       width: 100%;
       padding: 12px 20px;
@@ -41,13 +43,13 @@ textarea {
       box-sizing: border-box;
     }
 
+    /* for entire createing post section */
     #createpost {
       border-radius: 25px;
       background-color: #f2f2f2;
       padding: 20px;
       box-shadow: 2px 2px 1px rgb(208, 204, 221);
     }
-
 </style>
 
 <body>
@@ -73,7 +75,7 @@ textarea {
               <a class="nav-link" href="about.html">My Profile</a> <!--About-->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="service.html">My new Posts</a><!--Services-->
+              <a class="nav-link" href="service.html">My Posts</a><!--Services-->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">Search</a><!--BLog-->
@@ -95,7 +97,7 @@ textarea {
     <div id="createpost" style="margin-left: 80px; margin-right: 80px;">
     <form action="blog.html">
         <label for="fname"><p margin-top:"10px">What do you want to talk about?</p></label>
-        <textarea  id="content" name="content" placeholder="Type here..."></textarea>
+        <textarea  id="content" name="content" aria-setsize="50%" placeholder="Type here..."></textarea>
 
         <label for="hashtags">Add #Hashtag</label>
         <select id="hashtags" name="hashtags">
@@ -111,8 +113,8 @@ textarea {
     </div>
 
 
-
-    <div class="page-section">
+<!-- 
+  <div class="page-section">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 py-3">
@@ -131,7 +133,7 @@ textarea {
       </div>
     </div>
   </div>
-
+ -->
 
 
   <footer class="page-footer bg-image" style="background-image: url(../assets/img/world_pattern.svg);">
