@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Discussion-Cube">
+<xs:complexType>
+<xs:sequence>
+
+<xs:element name="Users" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+	<xs:element name="uid" type="xs:integer"></xs:element>
+	<xs:element name="name" type="xs:string"></xs:element>
+	<xs:element name="dsgn" type="xs:string"></xs:element>
+	<xs:element name="age" type="xs:integer"></xs:element>
+	<!--  <xs:element name="Salary" type="MySal"></xs:element> -->
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Questions" maxOccurs="unbounded">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element name="qid" type="xs:integer"></xs:element>
+		<xs:element name="qtext" type="xs:string"></xs:element>
+		<xs:element name="qupvote" type="xs:integer"></xs:element>
+		<xs:element name="qdownvote" type="xs:integer"></xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Answers" maxOccurs="unbounded">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element name="aid" type="xs:decimal"></xs:element>
+		<xs:element name="qid" type="xs:integer"></xs:element>
+		<xs:element name="atext" type="xs:string"></xs:element>
+		<xs:element name="aupvote" type="xs:integer"></xs:element>
+		<xs:element name="adownvote" type="xs:integer"></xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Replies" maxOccurs="unbounded">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element name="rid" type="xs:integer"></xs:element>
+		<xs:element name="rtext" type="xs:string"></xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Hashtags" maxOccurs="unbounded">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element name="hid" type="xs:integer"></xs:element>
+		<xs:element name="htext" type="xs:string"></xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Categories" maxOccurs="unbounded">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element name="cid" type="xs:integer"></xs:element>
+		<xs:element name="ctext" type="xs:string"></xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<!-- 
+<xs:simpleType name="MySal">
+<xs:restriction base="xs:integer">
+<xs:minInclusive value="10000"></xs:minInclusive>
+<xs:maxInclusive value="100000"></xs:maxInclusive>
+</xs:restriction>
+</xs:simpleType>
+-->
+</xs:schema>
