@@ -10,6 +10,13 @@
 
   <title>about</title>
 
+
+  <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace( 'editor' );
+  </script>
+
+
   <link rel="stylesheet" href="../assets/css/maicons.css">
 
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
@@ -103,6 +110,13 @@
         <label for="fname">
           <p>What do you want to talk about?</p>
         </label>
+        <!-- <div id="editor">
+          <p>This is the editor content.</p>
+      </div>
+      <script src="./node_modules/ckeditor/ckeditor.js"></script>
+      <script>
+          CKEDITOR.replace( 'editor' );
+      </script> -->
         <textarea id="content" name="content" placeholder="Type here..."></textarea>
 
         <label for="categories">Add Category</label>
