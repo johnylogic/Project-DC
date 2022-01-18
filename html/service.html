@@ -53,6 +53,15 @@
      box-sizing: border-box;
    }
    
+/*zooming effect on mouse hover for posts*/
+.zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(1.12); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 </style>
 
 <body>
@@ -95,31 +104,111 @@
       </div>
     </nav>
 </header>
+
 <!--First row-->
 <div class="row" style="margin-left: 80px; margin-right: 80px;">
-  <div class="col-sm">
-    <div class="page-section wow zoomIn" id="posts"> 
-        
-      My post number 2.
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts">   
+      My post number 1.
     </div>
-
   </div>
-  <div class="col-sm">
-    <div class="page-section wow zoomIn" id="posts"> 
-        
+
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts">  
       My post number 2.
     </div>
-
   </div>
-  <div class="col-sm">
-    <div class="page-section wow zoomIn" id="posts"> 
-        
-      My post number 2.
-    </div>
 
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts"> 
+      My post number 3.
+    </div>
   </div>
 </div>
-    
+
+<!--Second Row-->
+<div class="row" style="margin-left: 80px; margin-right: 80px;">
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts">   
+      My post number 4.
+    </div>
+  </div>
+
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts"> 
+      My post number 5.
+    </div>
+  </div>
+
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts">    
+      My post number 6.
+    </div>
+  </div>
+</div>
+
+<!--Third Row-->
+<div class="row" style="margin-left: 80px; margin-right: 80px;">
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts">  
+      My post number 7.
+    </div>
+  </div>
+
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts">         
+      My post number 8.
+    </div>
+  </div>
+
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts">       
+      My post number 9.
+    </div>
+  </div>
+</div>
+
+<!--Fourth Row-->
+<div class="row" style="margin-left: 80px; margin-right: 80px;">
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts">         
+      My post number 10.
+    </div>
+  </div>
+
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts">       
+      My post number 11.
+    </div>
+  </div>
+
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts">       
+      My post number 12.
+    </div>
+  </div>
+</div>
+
+<!--Fifth Row-->
+<div class="row" style="margin-left: 80px; margin-right: 80px;">
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts"> 
+      My post number 13.
+    </div>
+  </div>
+
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts">       
+      My post number 14.
+    </div>
+  </div>
+  <div class="col-sm zoom">
+    <div class="page-section wow zoomIn" id="posts"> 
+      My post number 15.
+    </div>
+  </div>
+</div>
+
 <!-- 
     <div class="container">
       <div class="page-banner">
@@ -266,8 +355,8 @@
     </div>
   </div>
     -->
-  <footer class="page-footer bg-image" style="background-image: url(../assets/img/world_pattern.svg);">
-    <div class="container">
+  <footer class="page-footer bg-image" style="background-image: url(../assets/img/world_pattern.svg); margin-top: 30px;">
+    <div class="container" >
       <div class="row mb-5">
 
         <div class="col-lg-3 py-3">
