@@ -47,7 +47,7 @@ xsi:noNamespaceSchemaLocation="emp.xsd">
 	<Emp-id>105</Emp-id>
 	<Emp-name>Suraj k</Emp-name>
 	<Emp-age>61</Emp-age>
-	<Emp-salary>255000</Emp-salary>
+	<Emp-salary>25000</Emp-salary>
 	<Emp-emailid>suresh@gmail.com</Emp-emailid>
 	<Emp-phonenum>8896475134</Emp-phonenum>
 	<Emp-designation>Developer</Emp-designation>
