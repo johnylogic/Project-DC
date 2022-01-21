@@ -6,11 +6,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<html>
 		<head>
 		</head>
-		<body>
+		<body bgcolor="#6ecce6">
 		
-		<h1 style="text-align:center">User Details</h1>
-		<table border="2" align="center">
-		<tr bgcolor="cyan">
+		<h1 style="text-align:center"><u>Tables</u></h1>
+		<table border="2" align="left" bgcolor="white" cellpadding="5">
+		<caption><h1 style="text-align:left;">User Details</h1></caption>
+		<tr bgcolor="RED" align="center">
 		<th>User ID</th>
 		<th>Name</th>
 		<th>Designation</th>
@@ -18,11 +19,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</tr>
 		<xsl:for-each select="Discussion-Cube/Users">
 		<xsl:sort select="name"></xsl:sort>
-		<tr>
+		<tr align="center">
 		<td>
 			<xsl:value-of select="uid"></xsl:value-of>
 		</td>
-		<td>
+		<td align="left">
 			<xsl:value-of select="name"></xsl:value-of>
 		</td>
 		<td>
@@ -36,9 +37,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</table>
 		
 <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
-		<h1 style="text-align:center; color=blue">Questions Details</h1>
-		<table border="2" align="center">
-		<tr>
+		<h1 style="text-align:center;">Questions Details</h1>
+		<table border="2" align="center" cellpadding="5">
+		<tr bgcolor="red">
 		<th>Question ID</th>
 		<th>Question Text</th>
 		<th>Upvotes</th>
@@ -47,8 +48,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<xsl:for-each select="Discussion-Cube/Questions">
 		<xsl:sort select="qid"></xsl:sort>
 		<xsl:if test="qupvote &gt; 20">
-		<tr>
-			<td>
+		<tr bgcolor="violet">
+			<td align="center">
 				<xsl:value-of select="qid"></xsl:value-of>
 			</td>
 			<td>
@@ -67,8 +68,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		
 <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
 		<h1 style="text-align:center">Answers Details</h1>	
-		<table border="2" align="center">
-		<tr>
+		<table border="2" align="center" cellpadding="5">
+		<tr bgcolor="red">
 		<th>Answer ID</th>
 		<th>Question ID</th>
 		<th>Answers </th>
@@ -77,11 +78,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</tr>
 		<xsl:for-each select="Discussion-Cube/Answers">
 		<xsl:sort select="aupvotes"></xsl:sort>
-		<tr bgcolor="#9acd32">
-			<td>
+		<tr bgcolor="yellow">
+			<td align="center">
 				<xsl:value-of select="aid"></xsl:value-of>
 			</td>
-			<td>
+			<td align="center">
 				<xsl:value-of select="qid"></xsl:value-of>
 			</td>
 			<td>
@@ -96,35 +97,17 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</tr>
 		</xsl:for-each>
 		</table>
-<!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
-		<h1 style ="text-align:center; color=red">Replies</h1>
-		<table border="5" align="center">
-		<tr>
-		<th>Reply ID</th>
-		<th>Replies</th>
-		</tr>
-		<xsl:for-each select="Discussion-Cube/Replies">
-		<xsl:sort select="aupvotes"></xsl:sort>
-		<tr bgcolor="red">
-			<td align="center">
-				<xsl:value-of select="rid"></xsl:value-of>
-			</td>
-			<td>
-				<xsl:value-of select="rtext"></xsl:value-of>
-			</td>
-		</tr>
-		</xsl:for-each>
-		</table>
+
 <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
 		<h1 style ="text-align:left">Hashtags</h1>
-		<table border="5" align="left">
-		<tr bgcolor="magenta">
+		<table border="5" align="left" cellpadding="5">
+		<tr bgcolor="green">
 		<th>Tag ID</th>
 		<th>Hashtag</th>
 		</tr>
 		<xsl:for-each select="Discussion-Cube/Hashtags">
 		<xsl:sort select="hid"></xsl:sort>
-		<tr>
+		<tr bgcolor="blue">
 			<td>
 				<xsl:value-of select="hid"></xsl:value-of>
 			</td>
@@ -135,8 +118,27 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</xsl:for-each>
 		</table>
 <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
-		<h1 style ="text-align:center">Categories</h1>
-		<table border="5" align="center">
+		<h1 style ="text-align:center; color=red">Replies</h1>
+		<table border="5" align="center" cellpadding="5">
+		<tr  bgcolor="red">
+		<th>Reply ID</th>
+		<th>Replies</th>
+		</tr>
+		<xsl:for-each select="Discussion-Cube/Replies">
+		<xsl:sort select="aupvotes"></xsl:sort>
+		<tr bgcolor="orange">
+			<td align="center">
+				<xsl:value-of select="rid"></xsl:value-of>
+			</td>
+			<td>
+				<xsl:value-of select="rtext"></xsl:value-of>
+			</td>
+		</tr>
+		</xsl:for-each>
+		</table>
+<!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
+		<h1 style ="text-align:right">Categories</h1>
+		<table border="5" align="right" cellpadding="5">
 		<tr bgcolor="magenta">
 		<th>Tag ID</th>
 		<th>Hashtag</th>
@@ -154,31 +156,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</xsl:for-each>
 		</table>
 		
-		<h2>Employee Details</h2>
-  		<xsl:apply-templates/>
-		
 		</body>
 		</html>
 	</xsl:template>
-	<!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
-	
-<xsl:template match="Users">
-  <p>
-  <xsl:apply-templates select="name"/>
-  <xsl:apply-templates select="dsgn"/>
-  </p>
-</xsl:template>
-
-<xsl:template match="name">
-  User Name: <span style="color:Red">
-  <xsl:value-of select="."/></span>
-  <br />
-</xsl:template>
-
-<xsl:template match="dsgn">
-  Designation <span style="color:Blue">
-  <xsl:value-of select="."/></span>
-  <br />
-</xsl:template>
-	
 </xsl:stylesheet>

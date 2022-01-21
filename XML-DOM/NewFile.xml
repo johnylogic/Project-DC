@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="test.xsl"?>
+<Discussion-Cube xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="NewXMLSchema.xsd">
+  <Users>
+  	<uid>101</uid>
+    <name>Johns Baby</name>
+    <dsgn>Advocate</dsgn>
+    <age>29</age>
+  </Users>
+  <Users>
+  	<uid>102</uid>
+    <name>Andrew Garren</name>
+    <dsgn>Student</dsgn>
+    <age>22</age>
+  </Users>
+  <Users>
+  	<uid>103</uid>
+    <name>Jerin Jacob</name>
+    <dsgn>Advocate</dsgn>
+    <age>33</age>
+  </Users>
+  <Users>
+  	<uid>104</uid>
+    <name>Steven Joseph</name>
+    <dsgn>Advocate</dsgn>
+    <age>35</age>
+  </Users>
+  <Users>
+  	<uid>105</uid>
+    <name>Tobey Marshell</name>
+    <dsgn>Advocate</dsgn>
+    <age>34</age>
+  </Users>
+ <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
+  <Questions>
+  	<qid>1</qid>
+  	<qtext>Why Cryptocurrency should be banned in India? </qtext>
+  	<qupvote>89</qupvote>
+  	<qdownvote>23</qdownvote>
+  </Questions>
+  
+   <Questions>
+  	<qid>2</qid>
+  	<qtext>Why suicides among the youth are increasing in  the country? </qtext>
+  	<qupvote>118</qupvote>
+  	<qdownvote>33</qdownvote>
+  </Questions>
+  
+   <Questions>
+  	<qid>3</qid>
+  	<qtext>Indian Polictics is the biggest joke in the world. your thoughts? </qtext>
+  	<qupvote>141</qupvote>
+  	<qdownvote>196</qdownvote>
+  </Questions>
+  
+   <Questions>
+  	<qid>4</qid>
+  	<qtext>Undoubtedly Democracy is the best system, but is there any room of improvement? </qtext>
+  	<qupvote>11</qupvote>
+  	<qdownvote>27</qdownvote>
+  </Questions>
+  
+   <Questions>
+  	<qid>5</qid>
+  	<qtext>In higher education, what would be a good performance task to assess critical thinking?</qtext>
+  	<qupvote>53</qupvote>
+  	<qdownvote>97</qdownvote>
+  </Questions>
+  
+  <Questions>
+  	<qid>6</qid>
+  	<qtext>How are cryptocurrency transactions recorded?</qtext>
+  	<qupvote>39</qupvote>
+  	<qdownvote>6</qdownvote>
+  </Questions>
+  
+  <Questions>
+  	<qid>7</qid>
+  	<qtext>I hear cryptocurrencies are used for illicit/illegal activities; is this true?</qtext>
+  	<qupvote>70</qupvote>
+  	<qdownvote>17</qdownvote>
+  </Questions>
+
+  <Questions>
+  	<qid>8</qid>
+	<qtext> Where can I get the datasets of criminal records which contains the criminal characteristics including the criminal photo?</qtext>
+ 	<qupvote>30</qupvote>
+  	<qdownvote>21</qdownvote>
+  </Questions>
+
+ <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  -->  
+  <Answers>
+  	<aid>1</aid>
+  	<qid>1</qid>
+  	<atext>Because Digital currencies lower the cost of transactions and bring more transparency to the financial system. </atext>
+  	<aupvote>56</aupvote>
+  	<adownvote>78</adownvote>
+  </Answers>
+  
+  <Answers>
+  	<aid>2</aid>
+  	<qid>4</qid>
+  	<atext>Democracy is not the best political regime. It is indirect which reduces the level of participation of the maximum number of citizens. </atext>
+  	<aupvote>132</aupvote>
+  	<adownvote>12</adownvote>
+  </Answers>
+  
+  <Answers>
+  	<aid>3</aid>
+  	<qid>5</qid>
+  	<atext>Give students raw data and ask them to write an argument or analysis based on the data. Have students explore them. </atext>
+  	<aupvote>56</aupvote>
+  	<adownvote>78</adownvote>
+  </Answers>
+  
+  <Answers>
+  	<aid>4</aid>
+  	<qid>6</qid>
+  	<atext>They are recorded on a shared, digital ledger called a blockchain. This is decentralized technology, spread across many computers. </atext>
+  	<aupvote>132</aupvote>
+  	<adownvote>12</adownvote>
+  </Answers>
+
+  <Answers>
+  	<aid>5</aid>
+  	<qid>8</qid>
+  	<atext>List can be obtained from the concerned Police Stations as well as from respective state crime records bureaus also.  </atext>
+  	<aupvote>72</aupvote>
+  	<adownvote>32</adownvote>
+  </Answers>
+  
+  <Answers>
+  	<aid>6</aid>
+  	<qid>7</qid>
+  	<atext>Yes, since the start there have been criminal activities with cryptocurrencies. </atext>
+  	<aupvote>19</aupvote>
+  	<adownvote>12</adownvote>
+  </Answers>
+    
+  <Answers>
+  	<aid>7</aid>
+  	<qid>2</qid>
+  	<atext>There are theories on drivers, the rise of social media among them. </atext>
+  	<aupvote>19</aupvote>
+  	<adownvote>12</adownvote>
+  </Answers> 
+  
+  <Answers>
+  	<aid>8</aid>
+  	<qid>2</qid>
+  	<atext>Stressors such as climate change, which has been found to have roughly the same effect on suicides as an economic recession.</atext>
+  	<aupvote>19</aupvote>
+  	<adownvote>12</adownvote>
+  </Answers>
+      
+  <Answers>
+  	<aid>9</aid>
+  	<qid>5</qid>
+  	<atext> Have students explore and write about unfamiliar points of view or “what if” situations. </atext>
+  	<aupvote>19</aupvote>
+  	<adownvote>12</adownvote>
+  </Answers> 
+
+ <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
+  <Replies>
+  	<rid>1</rid>
+  	<rtext>This is the 1st Reply</rtext>
+  </Replies>
+  
+  <Replies>
+  	<rid>2</rid>
+  	<rtext>This is the 2nd Reply</rtext>
+  </Replies>
+  
+  <Replies>
+  	<rid>3</rid>
+  	<rtext>This is the 3rd Reply</rtext>
+  </Replies>
+  
+  <Replies>
+  	<rid>4</rid>
+  	<rtext>This is the 4th Reply</rtext>
+  </Replies>
+  
+  <Replies>
+  	<rid>5</rid>
+  	<rtext>This is the 5th Reply</rtext>
+  </Replies>
+  
+  <Replies>
+  	<rid>6</rid>
+  	<rtext>This is the 6th Reply</rtext>
+  </Replies>
+   
+  <Replies>
+  	<rid>7</rid>
+  	<rtext>This is the 7th Reply</rtext>
+  </Replies>
+   
+  <Replies>
+  	<rid>8</rid>
+  	<rtext>This is the 8th Reply</rtext>
+  </Replies>
+ 
+ 
+ <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  -->  
+  <Hashtags>
+  	<hid>1</hid>
+  	<htext>#blacklivesmatter</htext>
+  </Hashtags>
+  
+  <Hashtags>
+  	<hid>2</hid>
+  	<htext>#youarenotalone</htext>
+  </Hashtags>
+  
+  <Hashtags>
+  	<hid>3</hid>
+  	<htext>#Saveourlaws</htext>
+  </Hashtags>
+  
+  <Hashtags>
+  	<hid>4</hid>
+  	<htext>#boycottexams</htext>
+  </Hashtags>
+  
+  <Hashtags>
+  	<hid>5</hid>
+  	<htext>#cancelmguexams</htext>
+  </Hashtags>
+  
+  <Hashtags>
+  	<hid>6</hid>
+  	<htext>#beautyandpride</htext>
+  </Hashtags>
+  
+   <Hashtags>
+  	<hid>7</hid>
+  	<htext>#beautyandpride</htext>
+  </Hashtags>
+  
+ <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
+  <Categories>
+  	<cid>1</cid>
+  	<ctext>Crime</ctext>
+  </Categories>
+  
+ <Categories>
+  	<cid>2</cid>
+  	<ctext>Civil</ctext>
+  </Categories>
+  
+  <Categories>
+  	<cid>3</cid>
+  	<ctext>Family</ctext>
+  </Categories>
+  
+  <Categories>
+  	<cid>4</cid>
+  	<ctext>Law</ctext>
+  </Categories>
+</Discussion-Cube>
