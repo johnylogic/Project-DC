@@ -17,6 +17,33 @@
   <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
 
   <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <style>
+    .disp_table {
+        width: 100%;
+        height: max-content;
+        position: center;
+        background-color: red;
+        align-self: center;
+        align-content: center;
+        float: center;
+    }
+    
+    table {
+        width: 60%;
+        height: 100%;
+        float: center;
+        align-content: center;
+    }
+    
+    th,
+    td,
+    tr {
+        border: 3px solid black;
+        text-align: center;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -225,8 +252,55 @@
             </div>
           </div>
         </div> -->
-
       </div>
+
+      <p>table here</p>
+    <section class="disp_table">
+        <br><br>
+        <table align="center" id="demo" style="border:3px rgb(120, 4, 230) solid"></table>
+
+        <script>
+            window.onload = loadXMLDoc();
+
+            function loadXMLDoc() 
+            {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() 
+                {
+                  if (this.readyState == 4 && this.status == 200) 
+                  {
+                      alert("let's go! table loaded");
+                      myFunction(this);
+                  }
+                };
+                xmlhttp.open("GET", "../Project-DC/NewFile.xml", true);
+                xmlhttp.send();
+            }
+
+            function myFunction(xml) 
+            {
+                var i;
+                var xmlDoc = xml.responseXML;
+                var table = "<tr><th>uid</th><th>name</th><th>dsgn</th><th>age</th></tr>";
+                var x = xmlDoc.getElementsByTagName("Users");
+                for (i = 0; i < x.length; i++) 
+                {
+                  table += "<tr><td>" +
+                      x[i].getElementsByTagName("uid")[0].childNodes[0].nodeValue +
+                      "</td><td>" +
+                      x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+                      "</td><td>" +
+                      x[i].getElementsByTagName("dsgn")[0].childNodes[0].nodeValue +
+                      "</td><td>" +
+                      x[i].getElementsByTagName("age")[0].childNodes[0].nodeValue +
+                      "</td></tr>";
+                }
+                document.getElementById("demo").innerHTML = table;
+            }
+        </script>
+    </section>
+
+
 
       <iframe class="wow" src="https://momento360.com/e/u/5aadf4a9040645fbb5d14928c006598a?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium" width="100%" height="600"loading=lazy style="border-radius: 1%; "></iframe>
 
