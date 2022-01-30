@@ -8,12 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>Discussion Cube | Create Post</title>
-  <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
-  <script>
-    CKEDITOR.replace( 'editor' );
-  </script>
-
+  <title>Discussion Cube | My Profile</title>
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
 
@@ -25,50 +20,28 @@
 </head>
 
 <style>
+  /* for entire createing post section */
+ #createpost {
+     height: 500px;
+     border-radius: 25px;
+     background-color: #f2f2f2;
+     padding: 40px;
+     box-shadow: 2px 2px 1px rgb(208, 204, 221);
+   }
+   
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+  }
 
-   /* for entire createing post section */
-  #createpost {
-      height: 500px;
-      border-radius: 25px;
-      background-color: #f2f2f2;
-      padding: 40px;
-      box-shadow: 2px 2px 1px rgb(208, 204, 221);
-    }
-
-/*for the post content type box only */
-  textarea {
-      width: 100%;
-      height: 250px;
-      padding: 20px 20px;
-      margin: 0px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      box-sizing: border-box;
-    }
-
-  /*for dropbox*/
- [type=text], select {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 12px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      box-sizing: border-box;
-    }
-    
+   
 </style>
 
 <body>
-  
-  <!-- Back to top button -->
-  <div class="back-to-top"></div>
-
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
       <div class="container">
-        <a href="#" class="navbar-brand"><span class="text-primary">Discussion</span> Cube</a>
+        <a href="../index.html" class="navbar-brand"><span class="text-primary">Discussion</span> Cube</a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -79,7 +52,7 @@
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Home</a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item active">
               <a class="nav-link" href="myprofile.html">My Profile</a> <!--About-->
             </li>
             <li class="nav-item">
@@ -92,9 +65,6 @@
               <a class="nav-link" href="aboutus.html">About Us</a><!--Contact-->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="userregistration.html">Register</a><!--Contact-->
-            </li>
-            <li class="nav-item">
               <a class="btn btn-primary ml-lg-2" href="create.html">Create</a><!--Create-->
             </li>
           </ul>
@@ -102,64 +72,36 @@
 
       </div>
     </nav>
+  </header>
 
-    <br>
-
-    <div id="createpost" class="wow zoomIn" style="margin-left: 80px; margin-right: 80px; margin-bottom: 100px;">
-    
-    <form action="myposts.html">
-        <label for="fname">
-          <p>What do you want to talk about?</p>
-        </label>
-        <!-- <div id="editor">
-          <p>This is the editor content.</p>
-      </div>
-      <script src="./node_modules/ckeditor/ckeditor.js"></script>
-      <script>
-          CKEDITOR.replace( 'editor' );
-      </script> -->
-        <textarea id="content" name="content" placeholder="Type here..."></textarea>
-
-        <label for="categories"></label>
-        <select id="categories" name="categories">
-          <option value="sample">Select Category</option>
-          <option value="crimes">Crimes</option>
-          <option value="civil">Civil</option>
-          <option value="family">Family</option>
-          <option value="medical">Medical</option>
-          <option value="labour">Labour</option>
-          <option value="company">Company</option>
-        </select>
-
-        <p align="center">
-        <input class= "btn btn-primary ml-lg-2" type="submit" value="Post" style="text-align: justify">
-        </p>
-    </form>
-
-
-    </div>
-
-<!-- 
-  <div class="page-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 py-3">
-          <h2 class="title-section">The number #1 SEO Service Company</h2>
-          <div class="divider"></div>
-
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-          <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi saepe eum ipsa. Tempore dolore itaque est blanditiis libero fugiat, ea nostrum nam at tempora quis, facilis officiis nemo mollitia.</p>
-        </div>
-        <div class="col-lg-6 py-3">
-          <div class="img-fluid py-3 text-center">
-            <img src="../assets/img/about_frame.png" alt="">
+  <div id="createpost" style="margin-left: 80px; margin-right: 80px; margin-bottom: 100px;">   
+    <div class="text">
+      <div class="container">
+        
+        <div class="row-sm">
+          <div class="col-sm">
+            <div class="image wow zoomInDown">
+              <img src="../assets/img/person/profilepicture.jpg" height="150px" width="170px" style="border-radius:30%; padding-left: 0px;" > 
+            </div>
           </div>
+          <div class="col-sm"> 
+              <h1>Johns Baby</h1>
+              <h2>Lawer</h2> 
+          </div>
+        </div>
+        <div class="row-sm">
+          <div class="col" style="font-weight: bold;">
+            About Me
+          </div>
+        </div>
+        <div class="row-sm">
+          <div class="col justify-center">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          </div>  
         </div>
       </div>
     </div>
   </div>
- -->
 
   <footer class="page-footer bg-image" style="background-image: url(../assets/img/world_pattern.svg);">
     <div class="container">
@@ -195,7 +137,7 @@
           <a href="#" class="footer-link">contact@discube.com</a>
         </div>
 
-      <!--
+        <!--
         <div class="col-lg-3 py-3">
           <h5>Newsletter</h5>
           <p>Get updates, news or events on your mail.</p>
