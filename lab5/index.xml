@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ignite>
+<modules>
+  <modulename>DISCUSSION CUBE</modulename>
+  <title>USER DETAILS</title>
+ 
+<m>
+   <LAWYER>
+        <id>1</id>
+        <name>JOSEPH</name>
+        <address>TRIVANDRUM ,KERALA</address>
+        <phone>8884712624</phone>
+        <type>ADMIN</type>
+        <usetype>LAWYER</usetype>
+        <status></status>
+    </LAWYER>
+    <LAWYER>
+        <id>3</id>
+        <name>JOHNS</name>
+        <address>PALA ,KERALA</address>
+        <phone>8884719624</phone>
+        <type>USER</type>
+        <usetype>LAWYER</usetype>
+        <status></status>
+    </LAWYER>
+    <LAWYER>
+        <id>2</id>
+        <name>NIDHI</name>
+        <address>CHENNAI ,TAMILNADU</address>
+        <phone>990080993</phone>
+        <type>USER</type>
+        <usetype>LAWYER</usetype>
+        <status></status>
+    </LAWYER>
+    <LAWYER>
+        <id>4</id>
+        <name>NIMMI</name>
+        <address>BANGALORE ,KARNATAKA</address>
+        <phone>9646563434</phone>
+        <type>USER</type>
+        <usetype>LAWYER</usetype>
+        <status></status>
+    </LAWYER>
+    <LAWYER>
+        <id>5</id>
+        <name>ANISHA</name>
+        <address>RANCHI ,JHARKHAND</address>
+        <phone>9646563434</phone>
+        <type>USER</type>
+        <usetype>LAWYER</usetype>
+        <status></status>
+    </LAWYER>
+</m>
+
+</modules>
+ 
+
+</ignite>
